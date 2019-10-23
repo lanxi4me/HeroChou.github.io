@@ -382,27 +382,83 @@
         <p>本站采用 <a href="https://pages.github.com/" target="_blank" rel="noopener">Github Page</a> + <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 构建和发布静态的网站。使用 github 仓库构建GitHub图床。使用 <a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">picGo</a>上传图片到 Github 图床。使用 <a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsDeliver</a> 提供的免费的CDN, 加速 Github 图床的访问速度。阅读本文你需要确保有 git 和 github 的相关知识，你可以参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰大神的博客</a>。</p>
 <a id="more"></a>
 
-<h2 id="使用-Github-Page-Hexo-构建静态的网站"><a href="#使用-Github-Page-Hexo-构建静态的网站" class="headerlink" title="使用  Github Page + Hexo 构建静态的网站"></a>使用  <a href="https://pages.github.com/" target="_blank" rel="noopener">Github Page</a> + <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 构建静态的网站</h2><h3 id="Github-Page-是什么？"><a href="#Github-Page-是什么？" class="headerlink" title="Github Page 是什么？"></a><a href="https://pages.github.com/" target="_blank" rel="noopener">Github Page</a> 是什么？</h3><p>Github Page 简单说来就是一个特殊的静态网站的“服务器”。只要我们把自己编写的静态网页，传入Github的特定的仓库（username.github.io这个仓库, username 是你的用户名）。我们就可以在浏览器输入<code>http:\\username.github.io</code>访问传入博客的静态网页。</p>
-<h3 id="Hexo-是什么？"><a href="#Hexo-是什么？" class="headerlink" title="Hexo 是什么？"></a><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 是什么？</h3><p>我们的静态网页一般是富文本，我们写博客就很复杂，每次写一篇文章，还要写很多 html 标签。但实际上，一篇文章内容才是重点。我们很希望有一种只关注内容，又能方便的转换成富文本的一种文本语言。<a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank" rel="noopener">markdown</a> 就是这样一种语言。而 Hexo 是帮我们把自己写的 markdown 文本转换成特定样式的静态页面。我们通过更换不同的主题，构建不同样式的静态页面。</p>
-<p>了解了 Github Page 和 Hexo 下面你可以跟着我的步伐一步一步地进行网站的构建。</p>
+<h2 id="使用-Github-Page-Hexo-构建静态的网站"><a href="#使用-Github-Page-Hexo-构建静态的网站" class="headerlink" title="使用  Github Page + Hexo 构建静态的网站"></a>使用  <a href="https://pages.github.com/" target="_blank" rel="noopener">Github Page</a> + <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 构建静态的网站</h2><h3 id="Github-Page-是什么？"><a href="#Github-Page-是什么？" class="headerlink" title="Github Page 是什么？"></a><a href="https://pages.github.com/" target="_blank" rel="noopener">Github Page</a> 是什么？</h3><p>Github Page 简单说来就是一个特殊的静态网站的“服务器”。只要我们把自己编写的静态网页，传入Github的特定的仓库（username.github.io这个仓库, username 是你的用户名）。我们就可以在浏览器输入<a href="http:\\username.github.io" target="_blank" rel="noopener">http:\\username.github.io</a>访问传入博客的静态网页。</p>
+<p>了解了 Github Page 下面你可以跟着我的步伐一步一步地进行网站的构建。</p>
 <h3 id="Github-Page-部署网站"><a href="#Github-Page-部署网站" class="headerlink" title="Github Page 部署网站"></a>Github Page 部署网站</h3><ol>
-<li>点击右上角 + , 创建一个仓库,将仓库命名为 <code>yourGithubName.github.io</code>.</li>
+<li>点击右上角 + , 创建一个仓库,将仓库命名为 <strong>yourGithubName.github.io</strong> .比如我的GitHubName为HeroChou，则创建的Repository name为HeroChou.github.io。</li>
 </ol>
-<img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/20191022212424.png" alt="20191022212424" style="zoom:50%;">
-
-<img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571751542063.png" alt="1571751542063" style="zoom:50%;">
+<p><fancybox><img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/20191022212424.png" alt><br><img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571751542063.png" alt></fancybox></p>
+<ol start="2">
+<li>点击createFile，新建一个文件index.html。在里面编辑写入hello World。在下方点击 commit 提交。</li>
+</ol>
+<p><fancybox><img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571752010925.png" alt><br><img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571752093798.png" alt></fancybox></p>
+<ol start="3">
+<li>在地址栏键入&lt; <a href="https://herochou.github.io/index.html">https://herochou.github.io/index.html</a> &gt;，打开如下页面。</li>
+</ol>
+<p><fancybox><img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571752233130.png" style="zoom:50%;"></fancybox></p>
+<h3 id="Hexo-是什么？"><a href="#Hexo-是什么？" class="headerlink" title="Hexo 是什么？"></a><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 是什么？</h3><p>我们的静态网页一般是富文本，我们写博客就很复杂，每次写一篇文章，还要写很多 html 标签。但实际上，一篇文章内容才是重点。我们很希望有一种只关注内容，又能方便的转换成富文本的一种文本语言。<a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank" rel="noopener">markdown</a> 就是这样一种语言。而 Hexo 是帮我们把自己写的 markdown 文本转换成特定样式的静态页面。我们通过更换不同的主题，构建不同主题的静态页面。</p>
+<h3 id="Hexo的安装"><a href="#Hexo的安装" class="headerlink" title="Hexo的安装"></a>Hexo的安装</h3><p>你可以参考Hexo的官方文档&lt; <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a> &gt;。对于Windows的用户也可以跟着我的步骤进行操作：</p>
+<ol>
+<li>安装Node.js</li>
+</ol>
+<p>Hexo 是依赖于node.js的。所以首先需要安装node.js。可以在node.js的官网&lt; <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> &gt;下载安装包，点击安装即可。</p>
+<p><fancybox><img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571821430045.png" alt="1571821430045"></fancybox></p>
+<p>在命令行中运行命令，查看node.js的版本。显示node.js的版本说明安装成功，否则安装失败。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
 
 <ol start="2">
-<li>新建一个文件index.html, 这是默认的欢迎页面。在里面编辑写入hello World。在下方点击 commit 提交。</li>
+<li>安装Hexo。</li>
 </ol>
-<img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571752010925.png" alt="1571752010925" style="zoom:50%;">
+<p>先创建一个目录用来存放blog的目录，在命令行中用cd命令进入该目录下。运行安装命令，等待一会儿就安装好了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571752093798.png" alt="1571752093798" style="zoom:50%;">
+<p>也可以使用cnpm代替npm，cnpm是淘宝镜像，国内的速度会快很多。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>运行如下命令查看hexo的版本。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>成功显示hexo的版本号则安装成功。</p>
+<p>运行如下命令，进行hexo目录的初始化，等待命令执行完毕。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>初始化完毕出现如下文件。</p>
+<p><fancybox><img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571822927601.png" alt="1571822927601" style="zoom:50%;"></fancybox></p>
+<ul>
+<li>node_modules：是依赖包</li>
+<li>public：存放的是生成的页面</li>
+<li>scaffolds：命令生成文章等的模板</li>
+<li>source：用命令创建的各种文章</li>
+<li>themes：主题</li>
+<li>_config.yml：整个博客的配置</li>
+<li>db.json：source解析所得到的</li>
+<li>package.json：项目所需模块项目的配置信息</li>
+</ul>
+<ol start="3">
+<li>博客预览</li>
+</ol>
+<p>运行命令，在地址栏输入&lt; <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> &gt;,出现如下界面，这个是Hexo默认的主题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571838743594.png" alt="1571838743594"><br><img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571838776673.png" alt="1571838776673"></p>
+<h3 id="选择一个主题"><a href="#选择一个主题" class="headerlink" title="选择一个主题"></a>选择一个主题</h3><p>你可以在Hexo的主题网站&lt; <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a> &gt;找到你喜欢的Hexo主题。开始搭建博客。你也可以选择我这款主题&lt; <a href="https://github.com/xaoxuu/hexo-theme-material-x" target="_blank" rel="noopener">https://github.com/xaoxuu/hexo-theme-material-x</a> &gt;。按照主题的教程进行配置。</p>
+<h3 id="将Hexo生成的静态博客上传GitHub-Page"><a href="#将Hexo生成的静态博客上传GitHub-Page" class="headerlink" title="将Hexo生成的静态博客上传GitHub Page"></a>将Hexo生成的静态博客上传GitHub Page</h3><ol>
+<li>打开_config.yml在其中添加上传仓库的相关配置</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YourGithubName/YourGithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>安装hexo-deployer-git插件</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>也可以使用cnpm代替npm，cnpm是淘宝镜像，国内的速度会快很多。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <ol start="3">
-<li>在地址栏键入<code>https://herochou.github.io/index.html</code>，打开如下页面。</li>
+<li>执行如下命令将Hexo生成的页面部署到GitHub Page</li>
 </ol>
-<img src="https://cdn.jsdelivr.net/gh/HeroChou/assets@master/createBlog/1571752233130.png" alt="1571752233130" style="zoom:50%;">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 
 
       </div>
@@ -415,10 +471,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-22T22:22:57+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-23T22:30:57+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2019年10月22日</p>
+    <p>更新于 2019年10月23日</p>
   </a>
 </div>
 
@@ -493,16 +549,16 @@
                       <span class="art-item-right" aria-hidden="true">
                           <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/2019/09/06/example/更自由的布局/" rel="prev" title="更自由的布局">
+                              <a href="/2018/09/22/projects/vim-cn.sh/" rel="prev" title="vim-cn.sh">
                                   
-                                      更自由的布局
+                                      vim-cn.sh
                                   
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/tips/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> tips</a>
+                                  <a class="tag" href="/tags/shell/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> shell</a>
                               </h6>
                           
                       </span>
@@ -637,7 +693,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用-Github-Page-Hexo-构建静态的网站"><span class="toc-text">使用  Github Page + Hexo 构建静态的网站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Github-Page-是什么？"><span class="toc-text">Github Page 是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo-是什么？"><span class="toc-text">Hexo 是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Github-Page-部署网站"><span class="toc-text">Github Page 部署网站</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用-Github-Page-Hexo-构建静态的网站"><span class="toc-text">使用  Github Page + Hexo 构建静态的网站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Github-Page-是什么？"><span class="toc-text">Github Page 是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Github-Page-部署网站"><span class="toc-text">Github Page 部署网站</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo-是什么？"><span class="toc-text">Hexo 是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo的安装"><span class="toc-text">Hexo的安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#选择一个主题"><span class="toc-text">选择一个主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将Hexo生成的静态博客上传GitHub-Page"><span class="toc-text">将Hexo生成的静态博客上传GitHub Page</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -810,8 +866,6 @@
         
           <li><a class="flat-box" title="/categories/博客搭建/" href="/categories/博客搭建/"><div class='name'>博客搭建</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/教程/" href="/categories/教程/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
-        
       </ul>
     </div>
   </section>
@@ -864,7 +918,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/tags/github-page/" style="font-size: 14px; color: #999">github page</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/jsDelivr/" style="font-size: 14px; color: #999">jsDelivr</a> <a href="/tags/picGo/" style="font-size: 14px; color: #999">picGo</a> <a href="/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/tags/tips/" style="font-size: 14px; color: #999">tips</a>
+      <a href="/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/tags/github-page/" style="font-size: 14px; color: #999">github page</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/jsDelivr/" style="font-size: 14px; color: #999">jsDelivr</a> <a href="/tags/picGo/" style="font-size: 14px; color: #999">picGo</a> <a href="/tags/shell/" style="font-size: 24px; color: #555">shell</a>
     </div>
   </section>
 
